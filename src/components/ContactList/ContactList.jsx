@@ -1,9 +1,7 @@
 import styles from './ContactList.module.css'
-import { Component } from 'react';
 
-class ContactList extends Component {
-  render() {
-    const { contacts, onDeleteContact } = this.props;
+
+const ContactList = ({ contacts, onDeleteContact }) => {
 
     return (
       <ul className={styles.contactList}>
@@ -18,7 +16,6 @@ class ContactList extends Component {
       </ul>
     );
   }
-}
 
 
 export default ContactList;
